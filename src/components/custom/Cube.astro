@@ -1,0 +1,151 @@
+---
+import Image from "~/components/common/Image.astro";
+
+const {
+  images=[],
+} = Astro.props;
+---
+<div class="cube-container">
+    <div class="cube">
+      <div class="face front"><Image
+        class="mx-auto rounded-md w-full"
+        widths={[400, 768, 1024, 2040]}
+        sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+        loading="eager"
+        width={600}
+        height={600}
+        {...images[0]}
+        alt={'test'}
+      /></div>
+      <div class="face back"><Image
+        class="mx-auto rounded-md w-full"
+        widths={[400, 768, 1024, 2040]}
+        sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+        loading="eager"
+        width={600}
+        height={600}
+        {...images[1]}
+        alt={'test'}
+      /></div>
+      <div class="face right"><Image
+        class="mx-auto rounded-md w-full"
+        widths={[400, 768, 1024, 2040]}
+        sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+        loading="eager"
+        width={600}
+        height={600}
+        {...images[2]}
+        alt={'test'}
+      /></div>
+      <div class="face left"><Image
+        class="mx-auto rounded-md w-full"
+        widths={[400, 768, 1024, 2040]}
+        sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+        loading="eager"
+        width={600}
+        height={600}
+        {...images[3]}
+        alt={'test'}
+      /></div>
+      <div class="face top"><Image
+        class="mx-auto rounded-md w-full"
+        widths={[400, 768, 1024, 2040]}
+        sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+        loading="eager"
+        width={600}
+        height={600}
+        {...images[4]}
+        alt={'test'}
+      /></div>
+      <div class="face bottom"><Image
+        class="mx-auto rounded-md w-full"
+        widths={[400, 768, 1024, 2040]}
+        sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+        loading="eager"
+        width={600}
+        height={600}
+        {...images[5]}
+        alt={'test'}
+      /></div>
+    </div>
+  </div>
+  
+  
+
+  <style>
+   /* From Uiverse.io by RodolpheANDRIEUX */ 
+.cube-container {
+  width: 200px;
+  height: 200px;
+  perspective: 800px;
+  margin: 50px auto;
+  transition: 0.8s ease-out;
+}
+
+.cube-container:hover {
+  transform: scale(2);
+}
+
+.cube {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotate 20s infinite linear;
+}
+
+.face {
+  --french: linear-gradient(
+      to right,
+      var(--aw-color-primary),
+      var(--aw-color-accent:)
+    )
+    1;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  line-height: 200px;
+  background: #000000cc;
+  border: 2px solid;
+  border-image: var(--french);
+}
+
+.front {
+  transform: translateZ(100px);
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+
+  </style>

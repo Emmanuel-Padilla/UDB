@@ -285,7 +285,15 @@ export default
     horajoco1: "Monday - Saturday 9 a.m. - 6 p.m.",
     horajoco2: "Sunday Closed",
     horaajijic1: "Monday - Saturday 8:30 a.m. - 9 p.m.",
-    horaajijic2: "Sunday 8:30 a.m. - 7 p.m."
+    horaajijic2: "Sunday 8:30 a.m. - 7 p.m.",
+
+    explore1: "Welcome to Udigital Business!",
+    explore2: "Innovation in Every Line of Code",
+    explore3: "We create fast, scalable, and customized digital solutions to take your business to the next level.",
+    explore4: "Fast Development, Real Results",
+    explore5: "With our agile approach, we deliver tangible results in short timeframes, without compromising quality.",
+    explore6: "Tailored Solutions",
+    explore7: "From mobile apps to web platforms or internal systems, we build tools fully adapted to your company's unique needs."
 
 
 }

@@ -6,6 +6,9 @@ import Content from '~/components/widgets/Content.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Features2 from '~/components/widgets/Features3.astro';
+import component from '~/components/widgets/Features3.astro';
+import Projects from '~/components/custom/Projects.astro';
+import Circle from '~/components/custom/Circle.astro';
 
 
 
@@ -22,14 +25,37 @@ const metadata = {
   actions={[
     { text: 'Contactanos', href: 'https://wa.me/3332548806', target: '_blank' },
   ]}
-    image={{
-      src: '~/assets/images/general/udigital.png',
-      alt: 'Pasteles Deliciosos',
-    }}
+    images={[
+      {
+        src: '~/assets/images/general/progress-pt.png',
+        alt: 'Imagen inicial',
+      },
+      {
+        src: '~/assets/images/general/consultores.png',
+        alt: 'Imagen inicial',
+      },
+      {
+        src: '~/assets/images/general/consultores.png',
+        alt: 'Imagen inicial',
+      },
+      {
+        src: '~/assets/images/general/opto-center.png',
+        alt: 'Imagen inicial',
+      },
+      {
+        src: '~/assets/images/general/udigital.png',
+        alt: 'Imagen inicial',
+      },
+      {
+        src: '~/assets/images/general/udigital.png',
+        alt: 'Imagen inicial',
+      },
+    ]}
   >
+  
     <Fragment slot="title">
       <span class="text-accent dark:text-white highlight bg-gradient-to-r from-purple-600 to-black text-transparent bg-clip-text text-6xl">UDigital Business</span>
-
+      
       
 <br />  <span class="hidden xl:inline"></span>
     </Fragment>
@@ -40,6 +66,8 @@ const metadata = {
       </span>  
     </Fragment>
   </Hero2>
+  <Circle/>
+ 
 
   <!-- Features3 Widget ************** -->
 
@@ -74,13 +102,58 @@ const metadata = {
         icon: 'tabler:square-number-4',
         href: '/info/apps',
       },
+      {
+        title: 'Marketing Digital',
+        description: `DESCRIPTION4`,
+        icon: 'tabler:square-number-4',
+        href: '/info/apps',
+      },
+      {
+        title: 'E-commerce - Tiendas en línea',
+        description: `DESCRIPTION4`,
+        icon: 'tabler:square-number-4',
+        href: '/info/apps',
+      },
+      
     ]}
     image={{
       src: '~/assets/images/general/digital.jpeg',
       alt: 'Barra de Pasteles',
     }}
-    
   />
+  <Projects/>
+
+  
+  <!-- component -->
+
+  
+  <script>
+    // Seleccionar todos los elementos con la clase 'wrap-video'
+    const videoElements = document.querySelectorAll('.wrap-video');
+
+    // Función para reproducir el video
+    function hoverVideo(e) {
+      const video = e.currentTarget.querySelector('video');
+      if (video) {
+        video.play();
+      }
+    }
+
+    // Función para pausar el video
+    function hideVideo(e) {
+      const video = e.currentTarget.querySelector('video');
+      if (video) {
+        video.pause();
+      }
+    }
+
+    // Añadir los eventos hover a cada contenedor de video
+    videoElements.forEach(videoElement => {
+      videoElement.addEventListener('mouseenter', hoverVideo);
+      videoElement.addEventListener('mouseleave', hideVideo);
+    });
+  </script>
+
 
   <!-- Content Widget **************** -->
 
@@ -120,7 +193,11 @@ const metadata = {
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2" data-translate="unico">Lo que nos hace únicos</h3>
     </Fragment>
   </Content>
-
+  
+  <!-- component -->
+  
+  
+  
   <!-- Content Widget **************** -->
 
   <!-- <Content
@@ -259,6 +336,7 @@ const metadata = {
     ]}
     
   />
+  
 
   <!-- FAQs Widget ******************* -->
 

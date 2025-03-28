@@ -40,7 +40,6 @@ export const translate = (language: string) => {
               button: "Español",
             },
           };
-        console.log("Asi lo estamos regresando",content[language].button);
         
         window.localStorage.setItem("languageDefault", language);
     

@@ -51,7 +51,6 @@ const content = {
     button: "Español",
   },
 };
-console.log("here", content[DEFAULT_LANGUAGE]);
 
 // const currentPath = /${trimSlash(new URL(Astro.url).pathname)};
 ---
@@ -195,16 +194,16 @@ console.log("here", content[DEFAULT_LANGUAGE]);
   
   const renderButton = () => {
     const languageToggle = document.getElementById("language-toggle");
-    console.log("languaje toggle",languageToggle);
+  
     
     const buttonText = languageToggle!.querySelector("span") as HTMLElement | null;
     if(languageToggle){
       languageToggle!.addEventListener("click", (event) => {
-        console.log("ejecutando");
+      
         
         event.preventDefault();
         const currentLanguage = window.localStorage.getItem("languageDefault") || DEFAULT_LANGUAGE;
-        console.log("click button",currentLanguage, "Idioma que debe verse en el boton en el click",content[currentLanguage].button);
+      
         buttonText!.textContent = content[currentLanguage].button;
         setLanguage(currentLanguage);
       });
@@ -214,29 +213,29 @@ console.log("here", content[DEFAULT_LANGUAGE]);
 
   const handleTranslate= () =>{
       const currentLanguage = window.localStorage.getItem("languageDefault") || DEFAULT_LANGUAGE;
-      console.log({currentLanguage},"Idioma que debe verse en el boton",content[currentLanguage].button);
+    
 
       buttonText!.textContent = content[currentLanguage].button;
       
       translate(currentLanguage);
   }
-  // console.log("Change language boton",changeLanguageBtn, "Default",DEFAULT_LANGUAGE, "")
+  //
 
   window.addEventListener("load", ( )=>{
-    console.log("Dentro Load");
+  
     
     renderButton();
     handleTranslate();
   });
   document.addEventListener("DOMContentLoaded", () => {
-    console.log("Dentro DOMContent");
+  
     renderButton();
     handleTranslate();
   });
   
   
   document.addEventListener("astro:after-swap", () => {
-    console.log("Dentro astro after");
+  
       renderButton();
       handleTranslate();
   })
@@ -252,7 +251,7 @@ console.log("here", content[DEFAULT_LANGUAGE]);
       // window.location.reload();
       
       const currentLanguage = window.localStorage.getItem("languageDefault") || 'es';
-      console.log("execute", currentLanguage);
+    
       
       translate(currentLanguage);
   }, false);

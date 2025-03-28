@@ -285,6 +285,25 @@ export default
     horajoco1: "Lunes - Sábado 9a.m - 6p.m",
     horajoco2: "Domingo Cerrado",
     horaajijic1: "Lunes - Sábado 8:30a.m - 9p.m",
-    horaajijic2: "Domingo 8:30a.m - 7p.m"
+    horaajijic2: "Domingo 8:30a.m - 7p.m",
+
+    explore1: "¡Bienvenido a Udigital Business!",
+    explore2: "Innovación en Cada Línea de Código",
+    explore3: "Creamos soluciones digitales personalizadas, rápidas y escalables para llevar tu negocio al siguiente nivel.",
+    explore4: "Desarrollo Rápido, Resultados Reales",
+    explore5: "Gracias a nuestro enfoque ágil, entregamos resultados concretos en tiempos breves, sin comprometer la calidad.",
+    explore6: "Soluciones Hechas a Medida",
+    explore7: "Desde aplicaciones móviles hasta plataformas web o sistemas internos, creamos herramientas totalmente adaptadas a las necesidades únicas de tu empresa.",
+
+    projects1: "Conoce algunos de nuestros proyectos",
+    projects2: "puto",
+    projects3: "Pensiones, modalidad 40, Altas y bajas en el IMSS y más.",
+    projects4: "Clínica de terapia física.",
+    projects5: "Proyecto",
+    projects6: "Cliente",
+    projects7: "Descripción",
+    projects8: "Tecnologías",
+    projects9: "Ver Proyecto",
+    projects10: "Ver Todos los Proyectos",
     
 }

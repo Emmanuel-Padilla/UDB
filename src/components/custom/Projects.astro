@@ -1,0 +1,103 @@
+---
+import photo from '~/assets/images/general/consultores.png'
+import foto1 from '~/assets/images/general/pasteleria.png'
+import foto2 from '~/assets/images/general/opto-center.png'
+import foto3 from '~/assets/images/general/pasteleria-america.png'
+import Image from '../common/Image.astro'
+import Boton from '~/components/custom/Boton.astro'
+import Headline from '../ui/Headline.astro'
+---
+<!-- component -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 mt-12 mb-12">
+    <article>
+        <Headline title="projects1" subtitle="Estos son algunos de nuestros clientes satisfechos" />
+        <section class="mt-6 grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8">
+            <article class="bg-white group relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200">
+                <div class="relative w-full h-80 md:h-64 lg:h-44">
+                    <Image src={photo}
+                        alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
+                        class="w-full h-full object-center object-cover">
+                </div>
+                <div class="px-3 py-4">
+                    <h3 class="text-sm text-gray-500 pb-2">
+                        <a class="bg-purple-600 py-1 px-2 text-white rounded-lg" href="https://consultoresdeoccidente.com/">
+                            <span class="absolute inset-0"></span>
+                            Consultores
+                        </a>
+                    </h3>
+                    <p class="text-base font-semibold text-gray-900 group-hover:text-purple-600" data-translate="projects3">
+                        Pensiones, modalidad 40, Altas y bajas en el IMSS y más</p>
+                        
+                </div>
+            </article>
+            <article class="bg-white group relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200">
+                <div class="relative w-full h-80 md:h-64 lg:h-44">
+                    <Image src={foto1}
+                        alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
+                        class="w-full h-full object-center object-cover">
+                </div>
+                <div class="px-3 py-4">
+                    <h3 class="text-sm text-gray-500 pb-2">
+                        <a class="bg-purple-600 py-1 px-2 text-white rounded-lg" href="https://progressptmx.com/">
+                            <span class="absolute inset-0"></span>
+                            Progress PT
+                        </a>
+                    </h3>
+                    <p class="text-base font-semibold text-gray-900 group-hover:text-purple-600" data-translate="projects4">
+                       Clínica de terapía física</p>
+                </div>
+            </article>
+            <article class="bg-white group relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200">
+                <div class="relative w-full h-80 md:h-64 lg:h-44">
+                    <Image src={foto2}
+                        alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
+                        class="w-full h-full object-center object-cover">
+                </div>
+                <div class="px-3 py-4">
+                    <h3 class="text-sm text-gray-500 pb-2">
+                        <a class="bg-purple-600 py-1 px-2 text-white rounded-lg" href="#">
+                            <span class="absolute inset-0"></span>
+                            Opto Center
+                        </a>
+                    </h3>
+                    <p class="text-base font-semibold text-gray-900 group-hover:text-purple-600">
+                        Optica en zapopan</p>
+                </div>
+            </article>
+            <!-- <article class="bg-white group relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200">
+                <div class="relative w-full h-80 md:h-64 lg:h-44">
+                    <Image src={foto3}
+                        alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
+                        class="w-full h-full object-center object-cover">
+                </div>
+                <div class="px-3 py-4">
+                    <h3 class="text-sm text-gray-500 pb-2">
+                        <a class="bg-purple-600 py-1 px-2 text-white rounded-lg" href="#">
+                            <span class="absolute inset-0"></span>
+                            Intermediate Level
+                        </a>
+                    </h3>
+                    <p class="text-base font-semibold text-gray-900 group-hover:text-purple-600">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </article>
+            <article class="bg-white group relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200">
+                <div class="relative w-full h-80 md:h-64 lg:h-44">
+                    <img src="https://cdn.pixabay.com/photo/2021/09/12/17/43/parrot-feathers-6619082_960_720.jpg"
+                        alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
+                        class="w-full h-full object-center object-cover">
+                </div>
+                <div class="px-3 py-4">
+                    <h3 class="text-sm text-gray-500 pb-2">
+                        <a class="bg-purple-600 py-1 px-2 text-white rounded-lg" href="#">
+                            <span class="absolute inset-0"></span>
+                            Advanced Level
+                        </a>
+                    </h3>
+                    <p class="text-base font-semibold text-gray-900 group-hover:text-purple-600">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </article> -->
+        </section>
+    </article>
+</section>
